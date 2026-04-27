@@ -82,6 +82,19 @@ CMake 构建后会把 `glfw3.dll` 和 `pictures/` 自动复制到输出目录。
 - 每累计 100 分，玩家移动速度提高，射击冷却缩短。
 - 分数达到当前目标后可以进入下一关，下一关目标分数翻倍。
 
+## 第三方依赖
+
+本项目使用并随仓库保留了以下开源库/第三方代码：
+
+| 依赖 | 用途 | 许可证/说明 |
+| --- | --- | --- |
+| GLFW | 创建窗口、处理输入、管理 OpenGL 上下文 | zlib/libpng license，见 `external/glfw/LICENSE.md` |
+| Dear ImGui | 绘制游戏界面和状态文本 | MIT License，见 `external/imgui/LICENSE.txt` |
+| GLAD | 加载 OpenGL 函数指针 | 由 glad 生成的 OpenGL loader，代码位于 `external/glad/` |
+| stb_image | 读取 PNG 图片资源 | public domain / MIT，见 `include/stb_image.h` 文件末尾的许可证说明 |
+
+第三方代码的版权和许可证归原作者所有，本仓库保留其原始许可证文件和版权声明。
+
 ## 说明
 
 这是一个学习性质的小项目，代码重点放在基本游戏循环、输入处理、碰撞判断和 OpenGL/ImGui 的组合使用上。后续可以继续拆分渲染、资源加载和游戏逻辑，让结构更清晰。
