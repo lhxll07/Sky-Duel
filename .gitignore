@@ -1,0 +1,16 @@
+# Build output
+build*/
+out/
+
+# Runtime/editor state
+imgui.ini
+*.log
+
+# IDE files
+.vs/
+.vscode/
+cmake-build-*/
+
+# OS files
+Thumbs.db
+.DS_Store
